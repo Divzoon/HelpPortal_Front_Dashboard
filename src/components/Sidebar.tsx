@@ -3,6 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import Lottie from 'lottie-react';
 import logoAnimationLottie from "../Lottie/Animation - 1702221223951.json"
 import Progressbar from './ProgressBar/Progressbar';
+import CompanyCardStats from './CompanyCardStats';
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -301,30 +302,15 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
         {/* <!-- Sidebar Menu --> */}
       </div>
       <div className="absolute bottom-3 right-0 left-0 h-[300px] p-3  w-full grid place-items-center">
-        <div className=" h-full w-full rounded-3xl relative p-2 grid place-items-center ">
-          <div className="relative w-[90%] h-[70%] dark:bg-boxdark-2  text-gray-2 bg-meta-4  dark:text-bodydark rounded-3xl   shadow-5 ">
-            <div className="flex justify-center relative">
-              <div className="bg-meta-1 dark:border-boxdark-2 dark:text-bodydark dark:border-6 border-4 border-meta-4 -mt-5 rounded-full h-20 w-20 grid place-items-center ">
-                logo
-              </div>
-              <div className="pt-2 gap-2 font-bold">Company Name</div>
-            </div>
-            <div className="font-semibold mx-2   h-[100px]">
-              <div>Documentations
+       
 
-              : Null
-              </div>
-              <div>Blogs
-                :Null
-              </div>
-            <div className='py-2'>
-              <div className='py-2'><h1>Quota</h1></div>
-            <Progressbar progressBarWidth={76} />
-            </div>
 
-            </div>
-          </div>
-        </div>
+       <CompanyCardStats
+        companyName="Example Company"
+        documentations={1454343433452}
+        blogs={233434345454342334435}
+        quotaProgress={75435345346}
+        />
       </div>
     </aside>
   );
