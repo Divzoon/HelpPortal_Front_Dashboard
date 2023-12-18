@@ -47,15 +47,15 @@ const Calendar: React.FC = () => {
         cells.push(
           <td
             key={dayNumber}
-            className="ease relative overflow-hidden h-20 cursor-pointer border border-stroke p-2 transition duration-500 hover:bg-gray dark:border-strokedark dark:hover:bg-meta-4 md:h-25 md:p-6 xl:h-31"
+            className="ease relative overflow-hidden m-1 h-20 hover:text-white cursor-pointer dark:text-white rounded-3xl border-2  border-black-2 dark:border-stroke/20 p-2 transition duration-500 hover:bg-black  text-black-2 dark:hover:bg-meta-4 md:h-25 md:p-6 xl:h-31"
             onClick={() => handleCellClick(dayNumber, events)}
           >
-            <span className="font-medium text-black dark:text-white">{dayNumber}</span>
+            <span className="font-medium     dark:text-white">{dayNumber}</span>
 
             {events.length > 1 ? (
               <div
                 key={j}
-                className="group invisible absolute left-2 z-99 mb-1 flex w-full md:w-90 flex-col rounded-sm border-l-[3px] border-primary bg-gray px-3 py-1 text-left opacity-0 group-hover:visible group-hover:opacity-100 dark:bg-meta-4 md:visible md:opacity-100"
+                className="group  invisible absolute left-2 z-99 mb-1 flex w-full md:w-90 flex-col rounded-3xl border-l-[3px] border-meta-1/40 text- dark:text-white hover:text-black-2 bg-gray px-3 py-1 text-left opacity-0 group-hover:visible group-hover:opacity-100 dark:bg-meta-4 md:visible md:opacity-100"
               >
                 <span className="">More ({events.length})</span>
               </div>
@@ -63,9 +63,9 @@ const Calendar: React.FC = () => {
               events.map((event, index) => (
                 <div
                   key={index}
-                  className="group invisible absolute left-2 z-99 mb-1 flex w-full md:w-90 flex-col rounded-sm border-l-[3px] border-primary bg-gray px-3 py-1 text-left opacity-0 group-hover:visible group-hover:opacity-100 dark:bg-meta-4 md:visible md:opacity-100"
+                  className="group invisible absolute left-2 z-99 mb-1 flex w-full md:w-90 flex-col rounded-3xl border-l-[3px] bg-gray px-3 py-1 text-left opacity-0 group-hover:visible group-hover:opacity-100 dark:bg-meta-4 md:visible md:opacity-100"
                 >
-                  <span className="group-hover:text-primary md:hidden block">More</span>
+                  <span className="group-hover:text-meta-1/40 md:hidden block">More</span>
                   <span className="event-name text-sm font-semibold text-black dark:text-white">{event.eventName}</span>
                   <span className="time text-sm font-medium text-black dark:text-white">
                     {`${formatTime(event.startTime)} - ${formatTime(event.endTime)}`}
@@ -97,12 +97,12 @@ const Calendar: React.FC = () => {
   };
 
   return (
-    <div>
-      <table className="w-full">
-        <thead>
-          <tr className="grid grid-cols-7 rounded-t-sm bg-primary text-white">
+    <div className=''>
+      <table className="w-full    ">
+        <thead className='rounded-3xl'>
+          <tr className="grid grid-cols-7  rounded-3xl mb-3 bg-black dark:bg-meta-1/20  text-white">
             {daysOfWeek.map((day, index) => (
-              <th key={index} className="flex h-15 items-center justify-center rounded-tl-sm p-1 text-xs font-semibold sm:text-base xl:p-5">
+              <th key={index} className="flex h-15  select-none cursor-pointer items-center justify-center rounded-tl-sm p-1 text-xs font-semibold sm:text-base xl:p-5">
                 <span className="hidden lg:block">{day}</span>
                 <span className="block lg:hidden">{day.slice(0, 3)}</span>
               </th>

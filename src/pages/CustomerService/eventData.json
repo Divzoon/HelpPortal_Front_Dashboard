@@ -27,6 +27,31 @@
   {
     "year": 2023,
     "month": 12,
+    "day": 15,
+    "eventName": "Event 1",
+    "clinetDetails": {
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "phone": "1234567890"
+    },
+    "SessionDetails": {
+      "url": "https://example.com/event1",
+      "room": "Room 1"
+    },
+    "startTime": {
+      "hour": 10,
+      "minute": 0,
+      "period": "AM"
+    },
+    "endTime": {
+      "hour": 12,
+      "minute": 0,
+      "period": "AM"
+    }
+  },
+  {
+    "year": 2023,
+    "month": 12,
     "day": 8,
     "eventName": "Event 2",
     "clinetDetails": {
