@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import Lottie from 'lottie-react';
-import logoAnimationLottie from "../Lottie/Animation - 1702221223951.json"
-import Progressbar from './ProgressBar/Progressbar';
-import CompanyCardStats from './CompanyCardStats';
+import logoAnimationLottie from "../../Lottie/Animation - 1702221223951.json"
+import Progressbar from '../ProgressBar/Progressbar';
+import CompanyCardStats from '../CompanyCardStats';
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -160,7 +160,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
               <li>
                 <NavLink
-                  to="/calendar"
+                  to="/CustomerService"
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
                     pathname.includes('calendar') &&
                     'bg-graydark dark:bg-meta-4'
@@ -179,7 +179,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                       fill=""
                     />
                   </svg>
-                  Calendar
+                  Customer Service
                 </NavLink>
               </li>
               {/* <!-- Menu Item Calendar --> */}

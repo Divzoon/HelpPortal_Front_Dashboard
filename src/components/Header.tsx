@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
-import Logo from '../images/logo/logo-icon.svg';
+import Logo from '../Lottie/Animation - 1702221223951.json';
 import DarkModeSwitcher from './DarkModeSwitcher';
 import DropdownNotification from './DropdownNotification';
 import DropdownUser from './DropdownUser/DropdownUserContainer';
+import Lottie from 'lottie-react';
 
 const Header = (props: {
   sidebarOpen: string | boolean | undefined;
@@ -55,8 +56,8 @@ const Header = (props: {
           </button>
           {/* <!-- Hamburger Toggle BTN --> */}
 
-          <Link className="block flex-shrink-0 lg:hidden" to="/">
-            <img src={Logo} alt="Logo" />
+          <Link className="block relative h-12 w-12 flex-shrink-0 lg:hidden" to="/">
+           <Lottie animationData={Logo} />
           </Link>
         </div>
 
