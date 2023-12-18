@@ -1,6 +1,6 @@
 import { lazy } from 'react';
 
-const Calendar = lazy(() => import('../pages/CustomerService'));
+const Calendar = lazy(() => import('../pages/CustomerService/CustomerService'));
 const Chart = lazy(() => import('../pages/Chart'));
 const FormElements = lazy(() => import('../pages/Form/FormElements'));
 const FormLayout = lazy(() => import('../pages/Form/FormLayout'));
