@@ -99,7 +99,7 @@ const DropdownContent = ({ dropdownRef, isOpen, closeDropdown }: { dropdownRef: 
         ref={dropdownRef}
         onFocus={() => closeDropdown()}
         onBlur={() => closeDropdown()}
-        className={`absolute right-0 mt-4 flex w-62.5 flex-col rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark ${
+        className={`absolute right-0 mt-4 rounded-2xl flex w-62.5 flex-col  border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark ${
           isOpen ? 'block' : 'hidden'
         }`}
       >
@@ -108,7 +108,7 @@ const DropdownContent = ({ dropdownRef, isOpen, closeDropdown }: { dropdownRef: 
             <li key={index}>
               <Link
                 to={item.to}
-                className="flex items-center gap-3.5 text-sm font-medium duration-300 ease-in-out hover:text-primary lg:text-base"
+                className="flex items-center gap-3.5 text-sm font-medium duration-300 ease-in-out hover:text-primary hover:bg-black p-2 px-4 rounded-xl lg:text-base"
               >
                 {item.icon}
                 {item.text}

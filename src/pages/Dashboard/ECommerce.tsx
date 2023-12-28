@@ -8,8 +8,6 @@ import ChartTwo from '../../components/ChartTwo.tsx';
 import ChatCard from '../../components/ChatCard.tsx';
 import MapOne from '../../components/MapOne.tsx';
 import TableOne from '../../components/TableOne.tsx';
-import SignIn from '../Authentication/SignIn.tsx';
-import SignUp from '../Authentication/SignUp.tsx';
 
 const ECommerce = () => {
   return (

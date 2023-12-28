@@ -75,7 +75,7 @@ export const Modal = ({ closeModal, onSubmit, defaultValue }) => {
       }}
     >
     
-      <div className="modal rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark overflow-auto">
+      <div className="modal rounded-2xl border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark overflow-auto">
       <div className="border-b border-stroke py-4 px-7 dark:border-strokedark">
         <div className="w-full flex justify-end">
       <strong className="text-xl align-center cursor-pointer "
